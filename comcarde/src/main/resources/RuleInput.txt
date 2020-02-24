@@ -1,0 +1,35 @@
+############################## Rule 1
+
+{
+"ruleNamespace":"ORDER",
+"ruleId":1,
+"condition": "(input.productName.equals('A') || input.productName.equals('B') || input.productName.equals('C') || input.productName.equals('E')) && input.stockLevel <= 4",
+"action":"output.setSuggestionMessage('Minimum stock level should be 4. Please place order');output.setProductName(input.productName);",
+"priority":1,
+"description":"A minimum stock level of 4."
+}
+
+############################## Rule 2
+
+{
+"ruleNamespace":"ORDER",
+"ruleId":2,
+"condition": "(input.productName.equals('D')) && input.stockLevel <= 8",
+"action":"output.setSuggestionMessage('Minimum stock level should be 8. Please place one-off order of 15');output.setProductName(input.productName);",
+"priority":1,
+"description":"A minimum stock level of 8 and one-off order of 15"
+}
+
+############################### Rule 3
+
+{
+"ruleNamespace":"ORDER",
+"ruleId":3,
+"condition": "(input.productName.equals('C'))",
+"action":"output.setSuggestionMessage('This product is blocked. So new stock should not be order');output.setProductName(input.productName);",
+"priority":2,
+"description":" This product is blocked."
+}
+
+
+
