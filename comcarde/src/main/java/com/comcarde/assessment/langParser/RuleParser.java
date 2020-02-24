@@ -10,7 +10,6 @@ import java.util.Map;
 /**
     *Author : Atul Kumar
 */
-@Slf4j
 @Service
 public class RuleParser<INPUT_DATA, OUTPUT_RESULT> {
 

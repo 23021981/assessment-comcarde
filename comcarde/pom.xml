@@ -8,11 +8,11 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.assessment</groupId>
+	<groupId>com.comcarde.assessment</groupId>
 	<artifactId>retailer</artifactId>
 	<version>0.0.1</version>
 	<name>retailer</name>
-	<description>Project for retailer product rule</description>
+	<description>Project for retailer stock rule</description>
 
 	<properties>
 		<java.version>1.8</java.version>

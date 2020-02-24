@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 /**
  *Author : Atul Kumar
  */
-@Slf4j
 @Service
 public class DSLKeywordResolver {
     Map<String, DSLResolver> dslKeywordResolverList;

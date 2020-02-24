@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 /**
  *Author : Atul Kumar
  */
-@Slf4j
 @Service
 public class StockInferenceEngine extends InferenceEngine<ProductDetails, AdviceDetails> {
 

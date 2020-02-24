@@ -12,7 +12,6 @@ import java.util.List;
 /**
  *Author : Atul Kumar
  */
-@Slf4j
 @Service
 public class RuleEngine {
 

@@ -38,13 +38,13 @@ public class DSLPatternServiceImpl implements com.comcarde.assessment.services.D
 
     @Override
     public String getKeywordResolver(String dslKeyword){
-        ArrayList<String> splittedKeyword = Lists.newArrayList(Splitter.on(DOT).omitEmptyStrings().split(dslKeyword));
+        List<String> splittedKeyword = Lists.newArrayList(Splitter.on(DOT).omitEmptyStrings().split(dslKeyword));
         return splittedKeyword.get(0);
     }
 
     @Override
     public String getKeywordValue(String dslKeyword){
-        ArrayList<String> splittedKeyword = Lists.newArrayList(Splitter.on(DOT).omitEmptyStrings().split(dslKeyword));
+        List<String> splittedKeyword = Lists.newArrayList(Splitter.on(DOT).omitEmptyStrings().split(dslKeyword));
         return splittedKeyword.get(1);
     }
 }

@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
 /**
  *Author : Atul Kumar
  */
-
-@Slf4j
 @Service
 public class DSLParser {
 
